@@ -50,8 +50,8 @@ print(f"n + nn + nnn = {sum_of_n}")
 
 # Задание 4
 number = input("Введите целое положительное число ")
-order = 0
-max_value = int(number[order])
+order = 1
+max_value = int(number[0])
 while (max_value != 9) & (order < len(number)):
     next_digit = int(number[order])
     if max_value < next_digit:
