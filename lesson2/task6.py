@@ -6,7 +6,10 @@ product = {}
 
 for count in range(number):
     for param in params:
-        product[param] = input(f"Введите {param} для товара {count + 1}: ")
+        element = input(f"Введите {param} для товара {count + 1}: ")
+        if element.isdigit():
+            element = int(element)
+        product[param] = element
     products.append((count + 1, product))
     product = {}
 print(products)
