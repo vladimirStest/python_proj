@@ -21,4 +21,5 @@ class NewList:
         print(f"Список вводимых пользователем чисел: {self.newList}")
 
 
-NewList()
+if __name__ == '__main__':
+    NewList()
